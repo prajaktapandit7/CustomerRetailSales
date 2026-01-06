@@ -78,7 +78,7 @@ Both fact tables reference shared dimension tables to ensure consistency across 
 Sales data supports roll-ups and drill-downs across multiple geo levels:
 
 ```text
-National
+Nation
  └── Region
      └── Area
          └── District
