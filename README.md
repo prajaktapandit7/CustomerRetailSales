@@ -82,8 +82,7 @@ National
  └── Region
      └── Area
          └── District
-             └── Territory
----
+             └── Territory```
 
 ### 🔄 Data Pipeline Summary
 - Ingest sales data from AWS S3 into Databricks
