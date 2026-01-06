@@ -83,9 +83,8 @@ National
      └── Area
          └── District
              └── Territory
+```
 
----
-```md
 ---
 
 ### 🔄 Data Pipeline Summary
