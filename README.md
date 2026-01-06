@@ -81,8 +81,9 @@ Sales data supports roll-ups and drill-downs across multiple geo levels:
 National
  └── Region
      └── Area
-         └── Territory
-             └── Local Geo / ZIP
+         └── District
+             └── Territory
+---
 
 ### 🔄 Data Pipeline Summary
 - Ingest sales data from AWS S3 into Databricks
@@ -91,5 +92,4 @@ National
 - Apply business rules
 - Build HCP-level ranked fact using window functions
 - Aggregate customer-level metrics into geo-level fact
-
-Push final fact tables to S3 for downstream consumption
+- Push final fact tables to S3 for downstream consumption
