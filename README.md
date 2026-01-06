@@ -33,7 +33,7 @@ Both fact tables reference shared dimension tables to ensure consistency across 
 **Output:** `df_hcp_geo_sales_final` (pushed to S3)
 
 **Grain:**
-- One row per **HCP × product × geography × time period**
+- **HCP × product × market × geography × time period**
 
 **Purpose:**
 - Enables **HCP-level performance analysis**
@@ -57,7 +57,7 @@ Both fact tables reference shared dimension tables to ensure consistency across 
 **Output:** `df_agg_sales_all` (pushed to S3)
 
 **Grain:**
-- One row per **geography × product × time period x customer segmentation**
+- One row per **geography × product × market × time period x customer segmentation**
 
 **Purpose:**
 - Provides a **rolled-up view of sales performance**
@@ -69,6 +69,7 @@ Both fact tables reference shared dimension tables to ensure consistency across 
 - Market share (Brand sales/Market sales)
 - Sales growth ((Curr sales - Prev sales)/Curr sales)
 - Aggregated sales by geography (Nation, Region, Area, District, Territory)
+- Aggregated sales for 'All' customer types
 
 ---
 
